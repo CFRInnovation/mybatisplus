@@ -24,4 +24,7 @@ public class User{
     @Version
     private Integer version;
 
+    @TableLogic
+    private Integer deleted;
+
 }

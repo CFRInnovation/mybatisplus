@@ -137,6 +137,13 @@ class MybatisplusApplicationTests {
 		e.getRecords().forEach(System.out::println);
 	}
 
+	//逻辑删除: 在数据库中还存在，但是查询查不到（本质，查询中多了个判断）
+	//需要插件
+	@Test
+	public void testDelete(){
+		userMapper.deleteById(1237387681550348296L);
+
+	}
 
 
 
